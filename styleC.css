@@ -1,1 +1,10 @@
 
+// <weight>: Use a value from 300 to 900
+// <uniquifier>: Use a unique and descriptive class name
+
+.merienda-<uniquifier> {
+  font-family: "Merienda", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
