@@ -1,31 +1,50 @@
 body {
+  /*Use Tahoma font, fallback to sans-serif*/
   font-family: Tahoma, sans-serif;
+  /*Set a large base font size for content*/
   font-size: 40px;
+  /*Enable Flexbox layout*/
   display: flex;
+  /*Arrange child elements vertically*/
   flex-direction: column;
+  /*Distribute boxes evenly along vertical axis*/
   justify-content: space-evenly;
+  /*Center boxes horizontally*/
   align-items: center;
+  /*Remove default body margin*/
   margin: 0;
+  /*Make body height fill the viewport*/
   height: 100vh;
 }
+
 .box {
+  /*Set box width*/
   width: 100px;
+  /*Set box height*/
   height: 100px;
+  /*Add a top border*/
   border-top: 1px solid #687291;
+  /*Center text horizontally inside the box*/
   text-align: center;
 }
 
 .box:nth-child(odd) {
+  /*Light gray-blue background for odd boxes*/
   background-color: #dfe1e7;
 }
 
 .box:nth-child(even) {
+  /*Slightly lighter gray background for even boxes*/
   background-color: #eeeff2;
 }
 
 #boxF {
+  /*Darker gray-blue background*/
   background-color: #687291;
+  /*Bold black border*/
   border: 4px solid black;
+  /*Vertically center text by matching box height*/
   line-height: 100px;
+  /*Horizontally center text*/
   text-align: center;
 }
