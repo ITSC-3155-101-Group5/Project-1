@@ -1,29 +1,47 @@
 body {
+  /*Set the default font for the page*/
   font-family: Tahoma, sans-serif;
+  /*Large font size*/
   font-size: 40px;
+  /*Use Flexbox layout to arrange child elements in a row*/
   display: flex;
+  /*Prevent wrapping to the next line*/
   flex-wrap: nowrap;
+  /*Align items to the top of the container*/
   align-items: flex-start;
 }
 
 .box {
+  /*Set width*/
   width: 100px;
+  /*Set height*/
   height: 150px;
+  /*Light gray background color*/
   background-color: #eeeff2;
+  /*Decorative left dotted border*/
   border-left: 10px dotted #d0d0ff;
+  /*Space inside the box*/
   padding: 10px;
+  /*Space between boxes horizontally*/
   margin-right: 10px;
 }
 
 .box:last-child {
+  /*Fix position*/
   position: fixed;
+  /*Stick to the bottom of the screen*/
   bottom: 0px;
+  /*Stick to the right of the screen*/
   right: 0px;
+  /*Remove right margin since it’s fixed*/
   margin-right: 0px;
 }
 
 .box:hover {
+  /*Change background when hovered*/
   background-color: yellow;
+  /*Change text color when hovered*/
   color: goldenrod;
+  /*Change cursor to pointer on hover*/
   cursor: pointer;
 }
