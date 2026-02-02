@@ -1,23 +1,35 @@
+/*Define a keyframe animation called "myAnimation"*/
 @keyframes myAnimation {
   0% {
+    /*Starting state: no movement*/
   }
   25% {
+    /*At 25% of the animation duration, move the element 20px to the right*/
     left: 20px;
   }
   50% {
+    /*At 50% of the animation duration, move the element 20px down*/
     top: 20px;
   }
   75% {
+    /*At 75% of the animation duration, move the element 20px to the left*/
     right: 20px;
   }
 }
+/*Apply animation to all odd-numbered divs with class "box" */
 div.box:nth-child(odd) {
+  /*Use the "myAnimation" keyframes*/
   animation-name: myAnimation;
+  /*Animation lasts 10 seconds*/
   animation-duration: 10s;
+  /*Position relative for movement offsets (left, top, right) to work*/
   position: relative;
 }
+/*Style specific even-numbered boxes (2nd and 4th child)*/
 div.box:nth-child(2),
 div.box:nth-child(4) {
+  /*Base background color*/
   background-color: green;
+  /*Gradient overlay from green to yellow at 45 degrees*/
   background-image: linear-gradient(45deg, green, yellow);
 }
